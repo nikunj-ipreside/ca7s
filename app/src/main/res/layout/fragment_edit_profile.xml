@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgEdtProPic"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                app:srcCompat="@drawable/ic_top_placeholder" />
+
+
+            <TextView
+                android:id="@+id/txtChangePhoto"
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_camera"
+                android:text="@string/change_photo"
+                android:textColor="@color/colorTxtSignUp" />
+
+            <EditText
+                android:id="@+id/edtProName"
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:hint="@string/your_name"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp"
+                android:maxLength="15"
+                android:text="@string/your_name" />
+
+            <LinearLayout style="@style/viewLineStyle" />
+
+
+            <EditText
+                android:id="@+id/edtProEmail"
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_10sdp"
+                android:text="loremipsum@gmail.com" />
+
+            <LinearLayout style="@style/viewLineStyle" />
+
+
+            <EditText
+                android:id="@+id/edtProNumber"
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="@string/number"
+                android:inputType="number"
+                android:maxLength="13"
+                android:padding="@dimen/_10sdp"
+                android:text="+0123456789" />
+
+            <LinearLayout style="@style/viewLineStyle" />
+
+            <Spinner
+                android:id="@+id/spinnerCity"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout style="@style/viewLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textViewStyleReguler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="@string/gender_"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorEdtEmail" />
+
+                <RadioGroup
+                    android:id="@+id/rgMaleFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbMale"
+                        style="@style/textViewStyleReguler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/drawable_selector_male_female_"
+                        android:checked="true"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:text="@string/male" />
+
+                    <RadioButton
+                        android:id="@+id/rbFemale"
+                        style="@style/textViewStyleReguler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:button="@drawable/drawable_selector_male_female_"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:text="@string/female" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textViewStyleReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/date_of_birth"
+                    android:textColor="@color/colorEdtEmail" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDateOfBirth"
+                        style="@style/textViewStyleReguler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_dropdown"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/dd_mm_yyyy"
+                        android:textColor="@color/colorEdtEmail" />
+
+                    <LinearLayout
+                        style="@style/viewLineStyle"
+                        android:layout_marginTop="@dimen/_5sdp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

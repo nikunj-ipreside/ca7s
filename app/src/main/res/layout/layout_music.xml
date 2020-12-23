@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/ll_mini_player"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:background="@color/colorAccent_light"
+    android:orientation="vertical"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <com.music.ca7s.utils.SwipeLayout-->
+<!--        android:id="@+id/swipe_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        >-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+    <RelativeLayout
+        android:id="@+id/RelBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:padding="@dimen/_3sdp">
+
+
+            <ImageView
+                android:id="@+id/iv_song_image_bottom"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_top_placeholder"
+                />
+
+
+        <TextView
+            android:id="@+id/txtSongNameBottom"
+            style="@style/textViewStyleReguler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/iv_song_image_bottom"
+            android:layout_toStartOf="@+id/linearPlayPause"
+            android:layout_toEndOf="@+id/iv_song_image_bottom"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/_11sdp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textStyle="bold"
+            android:text=""
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/txtSongContentBottom"
+            style="@style/textViewStyleReguler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSongNameBottom"
+            android:layout_toStartOf="@+id/linearPlayPause"
+            android:layout_toEndOf="@+id/iv_song_image_bottom"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:fontFamily="@font/montserrat_regular"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_9sdp" />
+
+        <LinearLayout
+            android:id="@+id/linearPlayPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_previous_song_bottom"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_3sdp"
+                app:srcCompat="@drawable/fast_backward_white" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_gravity="center"
+                android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_play_song_bottom"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_play" />
+
+            <ProgressBar
+                android:id="@+id/play_progressbar"
+                style="@android:style/Widget.Holo.ProgressBar.Small"
+                android:max="100"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_next_song_bottom"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:padding="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_toEndOf="@+id/iv_previous_song"
+                app:srcCompat="@drawable/fast_farward_white" />
+
+            <ImageView
+                android:id="@+id/iv_leftview"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:padding="@dimen/_8sdp"
+                app:srcCompat="@drawable/close_white"
+                card_view:ignore="MissingPrefix" />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_minimize"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekbarSongBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:padding="@dimen/_6sdp"
+        android:layout_marginTop="-5dp"
+        android:layout_below="@+id/RelBottomBar"
+        android:minHeight="@dimen/_18sdp"
+        android:maxHeight="@dimen/_18sdp"
+        android:progress="0"
+        android:thumb="@drawable/thumb_drawable"
+        android:progressDrawable="@drawable/seekbar_style_white"
+        />
+    </RelativeLayout>
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_leftview"-->
+<!--            android:layout_width="@dimen/_40sdp"-->
+<!--            android:layout_height="@dimen/_60sdp"-->
+<!--            android:background="@color/colorWhite"-->
+<!--            android:padding="@dimen/_13sdp"-->
+<!--            app:bring_to_clamp="@dimen/_40sdp"-->
+<!--            app:clamp="self"-->
+<!--            app:gravity="right"-->
+<!--            app:sticky="@dimen/_40sdp"-->
+<!--            android:src="@drawable/close_theme"-->
+<!--            card_view:ignore="MissingPrefix" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_rightview"-->
+<!--            android:layout_width="@dimen/_40sdp"-->
+<!--            android:layout_height="@dimen/_60sdp"-->
+<!--            android:background="@color/colorWhite"-->
+<!--            android:padding="@dimen/_13sdp"-->
+<!--            app:bring_to_clamp="@dimen/_40sdp"-->
+<!--            app:clamp="self"-->
+<!--            app:gravity="left"-->
+<!--            app:sticky="none"-->
+<!--            android:src="@drawable/close_theme"-->
+<!--            card_view:ignore="MissingPrefix" />-->
+<!--    </com.music.ca7s.utils.SwipeLayout>-->
+
+</RelativeLayout>

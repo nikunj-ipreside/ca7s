@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp">
+
+    <LinearLayout
+        android:id="@+id/llRowNavItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_3sdp">
+
+
+        <ImageView
+            android:id="@+id/imgItemIcon"
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_13sdp"
+            android:layout_margin="@dimen/_3sdp"
+            app:srcCompat="@drawable/explore_gray" />
+
+        <TextView
+            android:id="@+id/txtItemName"
+            style="@style/textViewStyleReguler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textSize="@dimen/_11sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Share"
+            android:textColor="@color/colorTxtMenu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLine"
+        style="@style/viewLineStyle"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/colorLineMenu"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+</LinearLayout>

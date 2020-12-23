@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start"
+            card_view:cardCornerRadius="@dimen/_10sdp"
+            android:background="#FFFFFF">
+            <TextView
+                android:id="@+id/tooltip_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Tooltip using PopupWindow:)"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/tooltip_nav_up"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="-18dp"
+            android:layout_gravity="left|start"
+            android:background="@drawable/nav_down" />
+    </LinearLayout>
+
+</RelativeLayout>

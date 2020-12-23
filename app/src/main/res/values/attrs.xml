@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="ViewPagify">
+        <attr name="horizontalPadding" format="dimension"/>
+        <attr name="changeItemByClick" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="progressbarColor" format="color" />
+        <attr name="progressBarThickness" format="dimension" />
+
+    </declare-styleable>
+
+    <attr name="mwhWaves" format="string|enum">
+        <enum name="MultiWave" value="-1"/>
+        <enum name="PairWave" value="-2"/>
+    </attr>
+    <attr name="mwhShape" format="enum">
+        <enum name="Rect" value="0"/>
+        <enum name="RoundRect" value="1"/>
+        <enum name="Oval" value="2"/>
+    </attr>
+    <declare-styleable name="WaveView">
+        <attr name="waveNumberOfWaves" format="integer" />
+        <attr name="waveFrequency" format="float" />
+        <attr name="waveAmplitude" format="float" />
+        <attr name="wavePhaseShift" format="float" />
+        <attr name="waveDensity" format="float" />
+        <attr name="wavePrimaryLineWidth" format="float" />
+        <attr name="waveSecondaryLineWidth" format="float" />
+        <attr name="waveBackgroundColor" format="color" />
+        <attr name="waveColor" format="color" />
+        <attr name="waveXAxisPositionMultiplier" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeLayout">
+        <!--where view must be located in default state-->
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="right" value="1" />
+            <enum name="center" value="0" />
+        </attr>
+
+        <!--Does view should been stick after touch up-->
+        <attr name="sticky" format="dimension">
+            <!--stick mode is off-->
+            <enum name="none" value="-2" />
+            <!--stick view if it has reached offset equals to its width-->
+            <enum name="self" value="-1" />
+        </attr>
+        <attr name="sticky_sensitivity" format="float" />
+
+        <!--the maximum offset that view can be moved-->
+        <attr name="clamp" format="dimension">
+            <enum name="parent" value="-1" />
+            <enum name="self" value="-2" />
+        </attr>
+
+        <!--move view to clamp if the offset reached this value-->
+        <attr name="bring_to_clamp" format="dimension">
+            <enum name="no" value="-1"/>
+        </attr>
+
+        <!--enable or disable swipe gestures -->
+        <attr name="swipe_enabled" format="boolean"/>
+
+        <!--enable or disable swipe gestures from left side-->
+        <attr name="left_swipe_enabled" format="boolean"/>
+
+        <!--enable or disable swipe gestures from right side-->
+        <attr name="right_swipe_enabled" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="SlidingUpPanelLayout">
+        <attr name="umanoPanelHeight" format="dimension" />
+        <attr name="umanoShadowHeight" format="dimension" />
+        <attr name="umanoParallaxOffset" format="dimension" />
+        <attr name="umanoFadeColor" format="color" />
+        <attr name="umanoFlingVelocity" format="integer" />
+        <attr name="umanoDragView" format="reference" />
+        <attr name="umanoScrollableView" format="reference" />
+        <attr name="umanoOverlay" format="boolean"/>
+        <attr name="umanoClipPanel" format="boolean"/>
+        <attr name="umanoAnchorPoint" format="float" />
+        <attr name="umanoInitialState" format="enum">
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+            <enum name="anchored" value="2" />
+            <enum name="hidden" value="3" />
+        </attr>
+        <attr name="umanoScrollInterpolator" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragFromEdge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="DragDropSwipeRecyclerView">
+        <attr name="item_layout" format="reference" />
+        <attr name="divider" format="reference" />
+        <attr name="behind_swiped_item_icon" format="reference" />
+        <attr name="behind_swiped_item_icon_secondary" format="reference" />
+        <attr name="behind_swiped_item_icon_margin" format="dimension" />
+        <attr name="behind_swiped_item_icon_centered" format="boolean" />
+        <attr name="behind_swiped_item_bg_color" format="color" />
+        <attr name="behind_swiped_item_bg_color_secondary" format="color" />
+        <attr name="behind_swiped_item_custom_layout" format="reference" />
+        <attr name="behind_swiped_item_custom_layout_secondary" format="reference" />
+        <attr name="swiped_item_opacity_fades_on_swiping" format="boolean" />
+    </declare-styleable>
+
+</resources>

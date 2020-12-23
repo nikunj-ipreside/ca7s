@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_30sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:srcCompat="@drawable/splash_logo_new"
+            android:layout_centerHorizontal="true"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/editTextStyle"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:passwordToggleTint="@color/colorEdtEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmail"
+                style="@style/editTextStyle"
+                android:hint="Email"
+                android:paddingTop="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            style="@style/viewLineStyle"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/editTextStyle"
+            app:passwordToggleDrawable="@drawable/drawable_show_password"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            app:passwordToggleTint="@drawable/drawable_show_password_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPassword"
+                style="@style/editTextStyle"
+
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout style="@style/viewLineStyle" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/editTextStyle"
+            app:passwordToggleDrawable="@drawable/drawable_show_password"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            app:passwordToggleTint="@drawable/drawable_show_password_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtConfirmPassword"
+                style="@style/editTextStyle"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout style="@style/viewLineStyle" />
+
+        <CheckBox
+            android:id="@+id/chkTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:button="@drawable/drawable_checkbox"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="@string/i_agree_to_the_ca7s_terms_of_services_and_privacy_policy"
+            android:textColor="@color/colorEdtEmail"
+            android:textSize="@dimen/_14ssp" />
+
+        <Button
+            android:id="@+id/btnSingUp"
+            style="@style/buttonStyle"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/drawable_login_button"
+            android:text="@string/sign_up" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/already_registered"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorTxtSignUp"
+                />
+
+            <TextView
+                android:id="@+id/txtSignIn"
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:gravity="center_horizontal"
+                android:text="@string/sign_in_here"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/colorTxtSignUp"
+                 />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

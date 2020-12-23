@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EB78C3</color>
+    <color name="colorPrimaryDark">#EB78C3</color>
+    <color name="colorAccent">#EB78C3</color>
+    <color name="colorAccent_light">#EB78C3</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorEdtEmail">#5F5F5F</color>
+    <color name="colorBtnLogin">#EB78C3</color>
+    <color name="colorTxtFb">#264FA6</color>
+    <color name="colorTxtSignUp">#781652</color>
+    <color name="colorEdtLine">#EB78C3</color>
+    <color name="colorTopbar">#EB78C3</color>
+    <color name="colorTxtMenu">#414344</color>
+    <color name="colorLineMenu">#C8C8C8</color>
+    <color name="colorBottomBar">#f9f7f7</color>
+    <color name="colorVPagerHeader">#EB78C3</color>
+    <color name="colorVPagerTab">#EB78C3</color>
+    <color name="player_bottom">#F0F0F0</color>
+    <color name="colorDelete">#d40606</color>
+    <color name="light_transparent">#7E121646</color>
+    <color name="light_transparent1">#9E121646</color>
+    <color name="light_gray">#F2F2F2</color>
+    <color name="gray">#9D9D9D</color>
+    <color name="light_white1">#f5f5f5</color>
+    <color name="light_white2">#f1f1f1</color>
+    <color name="light_white_search">#fbfbfb</color>
+    <!--    <color name="light_transparent">#635049</color>-->
+
+</resources>

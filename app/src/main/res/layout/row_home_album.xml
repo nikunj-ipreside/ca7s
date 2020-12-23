@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llRowTopRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgTopPic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_top_placeholder" />
+
+    <TextView
+        android:id="@+id/txtTopName"
+        style="@style/textViewStyleReguler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingEnd="10dp"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="Friday Feels"
+        android:textColor="@color/colorTxtMenu"
+        android:textSize="@dimen/_16ssp"
+        android:visibility="gone"/>
+
+</LinearLayout>

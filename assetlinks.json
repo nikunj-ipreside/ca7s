@@ -1,0 +1,25 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.music.ca7s",
+    "sha256_cert_fingerprints":
+    ["4B:60:E3:3C:59:7F:B4:DA:7B:CA:64:45:63:29:45:08:EE:06:67:7D:E8:40:72:77:45:69:27:00:CC:94:DC:DD"]
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "web",
+    "site": "https://www.ca7s.com"
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.music.ca7s",
+    "sha256_cert_fingerprints":
+    ["4B:60:E3:3C:59:7F:B4:DA:7B:CA:64:45:63:29:45:08:EE:06:67:7D:E8:40:72:77:45:69:27:00:CC:94:DC:DD"]
+  }
+}]

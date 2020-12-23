@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "324070439366",
+    "firebase_url": "https://ca7s-de15c.firebaseio.com",
+    "project_id": "ca7s-de15c",
+    "storage_bucket": "ca7s-de15c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324070439366:android:eed171e9e1b4396d",
+        "android_client_info": {
+          "package_name": "com.music.ca7s"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324070439366-v0f9gsagf6848t4t3rnplm2fmt29qs1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVCdq7lKjsAjiFPqStEZDeHxBk-sqBig8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

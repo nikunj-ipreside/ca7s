@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:myServiceContext=".activity.HomeActivity">
+
+    <include layout="@layout/include_topbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_shape"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_340sdp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linearCurveBg"
+                android:layout_marginBottom="@dimen/_minus50sdp"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/linearCurveBg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_profile_curve"
+                android:orientation="vertical" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearFullCurve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgShowHp"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_scan_hp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfilePic"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:src="@drawable/ic_top_placeholder"
+                    app:civ_border_color="@color/colorWhite"
+                    app:civ_border_width="2dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtProfileName"
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_horizontal"
+                android:text="Your Name"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/colorTxtSignUp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textViewStyleReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/i"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/colorTxtMenu"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:padding="@dimen/_1sdp"
+                    android:layout_gravity="center"
+                    android:tint="@color/colorAccent_light"
+                    app:srcCompat="@drawable/heart_theme_filled" />
+
+                <TextView
+                    android:id="@+id/txtProfileCity"
+                    style="@style/textViewStyleReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Durban"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/colorTxtMenu"
+                    android:textSize="@dimen/_14ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearFollowers"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtFolloweres"
+                        style="@style/textViewStyleReguler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/colorTxtSignUp" />
+
+                    <TextView
+                        style="@style/textViewStyleReguler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/followers"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/colorTxtMenu" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_2sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorTxtMenu" />
+
+                <LinearLayout
+                    android:id="@+id/linearFollowing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtFollowing"
+                        style="@style/textViewStyleReguler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/colorTxtSignUp" />
+
+                    <TextView
+                        style="@style/textViewStyleReguler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/following"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/colorTxtMenu" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtEditProfile"
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/drawable_search_edit"
+                android:drawableStart="@drawable/ic_edit_profile"
+                android:drawablePadding="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingEnd="@dimen/_15sdp"
+                android:text="@string/edit_profile"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTxtSignUp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_below="@+id/rel_shape"
+            android:layout_marginTop="@dimen/_minus50sdp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <LinearLayout
+                android:id="@+id/rl_favourite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    app:srcCompat="@drawable/heart_theme_filled"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:tint="@color/colorAccent_light"/>
+
+                <TextView
+                    android:id="@+id/txtFavourite"
+                    style="@style/textViewStyleReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/favourite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_downloads"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center_horizontal">
+                <ImageView
+                    app:srcCompat="@drawable/download_theme"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:tint="@color/colorAccent_light"/>
+                <TextView
+                    android:id="@+id/txtMyMusic"
+                    style="@style/textViewStyleReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/downloads" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_addmusic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    app:srcCompat="@drawable/music_theme"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                   />
+
+                <TextView
+                    android:id="@+id/txtAddMusic"
+                    style="@style/textViewStyleReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/add_music" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

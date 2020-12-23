@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_topbar" />
+
+    <LinearLayout
+        android:id="@+id/lib_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/txtSelectLanguage"
+            style="@style/textViewStyleReguler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_language"
+            android:textColor="@color/colorTxtSignUp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_16ssp" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txtLanguage"
+            style="@style/textViewStyleReguler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/english"
+            android:textColor="@color/colorTxtSignUp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_16ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:id="@+id/lib_economic">
+
+        <TextView
+            style="@style/textViewStyleReguler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/economic_mode"
+            android:textColor="@color/colorTxtSignUp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_16ssp" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Switch
+            android:id="@+id/switcheconomic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:theme="@style/SCBSwitch" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:id="@+id/lib_notification">
+
+        <TextView
+            style="@style/textViewStyleReguler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notification"
+            android:textColor="@color/colorTxtSignUp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_16ssp" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Switch
+            android:id="@+id/switchNotificatio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:theme="@style/SCBSwitch" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtChangePassword"
+        style="@style/textViewStyleReguler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="@string/change_password"
+        android:textColor="@color/colorTxtSignUp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="@dimen/_16ssp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:id="@+id/lib_private_account">
+
+        <TextView
+            style="@style/textViewStyleReguler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/private_account"
+            android:textColor="@color/colorTxtSignUp"
+            android:fontFamily="@font/montserrat_regular"
+
+            android:textSize="@dimen/_16ssp" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Switch
+            android:theme="@style/SCBSwitch"
+            android:id="@+id/switchPrivateAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtClearSearchHistory"
+        style="@style/textViewStyleReguler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="@string/clear_search_history"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/colorTxtSignUp"
+        android:textSize="@dimen/_16ssp" />
+</LinearLayout>

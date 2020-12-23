@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/_30sdp"
+    android:paddingStart="@dimen/_30sdp"
+    android:paddingTop="@dimen/_20sdp"
+    tools:myServiceContext=".activity.HomeActivity">
+
+
+    <EditText
+        android:id="@+id/et_lyrics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/drawable_rectangle_addlyric"
+        android:gravity="top|start"
+        android:hint="@string/paste_lyrics_here"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:maxEms="10"
+        android:textColor="@color/colorEdtEmail"
+        android:textColorHint="@color/colorLineMenu" />
+
+     <Button
+         android:id="@+id/btnSave"
+         style="@style/buttonStyle"
+         android:layout_width="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginBottom="@dimen/_30sdp"
+         android:layout_marginTop="@dimen/_20sdp"
+         android:background="@drawable/drawable_login_button"
+         android:paddingEnd="@dimen/_40sdp"
+         android:paddingStart="@dimen/_40sdp"
+         android:text="@string/save"
+         android:textAllCaps="true" />
+
+
+</LinearLayout>

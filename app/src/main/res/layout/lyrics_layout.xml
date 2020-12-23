@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/lyrics_background"
+    android:minHeight="@dimen/_250sdp"
+    android:minWidth="@dimen/_280sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_40sdp"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_main1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:text="@string/lyrics"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_bold"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/close_white"
+            android:padding="@dimen/_3sdp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_songname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:text="@string/lyrics"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/montserrat_bold"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="normal"
+        android:singleLine="false"
+        android:maxLines="3"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:text="@string/lyrics"
+        android:layout_weight="1"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/montserrat_regular"/>
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:padding="@dimen/_2sdp"
+        android:src="@drawable/white_app_logo"/>
+</LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/colorWhite"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/tv_lyrics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="normal"
+        android:singleLine="false"
+        android:padding="@dimen/_10sdp"
+        android:text=""
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/montserrat_regular"/>
+</LinearLayout>

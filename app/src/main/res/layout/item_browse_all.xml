@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_80sdp"
+    android:layout_height="@dimen/_80sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    card_view:cardCornerRadius="@dimen/_10sdp"
+    android:layout_margin="@dimen/_8sdp"
+    android:background="@color/colorWhite"
+    android:elevation="@dimen/_6sdp">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_top_placeholder"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/iv_image_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/round_corber_background" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:maxLines="2"
+        android:gravity="center"
+        android:maxLength="158"
+        android:padding="@dimen/_2sdp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:singleLine="false"/>
+
+
+</RelativeLayout>

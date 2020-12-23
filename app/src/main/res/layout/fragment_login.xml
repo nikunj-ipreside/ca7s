@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:paddingStart="@dimen/_30sdp"
+        android:paddingTop="@dimen/_10sdp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_35sdp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_close"
+                android:id="@+id/close"/>
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:srcCompat="@drawable/splash_logo_new"
+            android:layout_centerHorizontal="true"/>
+
+         </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/editTextStyle"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:passwordToggleTint="@color/colorEdtEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmail"
+                style="@style/editTextStyle"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="#5F5F5F"
+                android:background="@null"
+                android:textSize="@dimen/_15ssp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            style="@style/viewLineStyle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="#D471AD" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/editTextStyle"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:passwordToggleDrawable="@drawable/drawable_show_password"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@drawable/drawable_show_password_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPassword"
+                style="@style/editTextStyle"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="#5F5F5F"
+                android:background="@null"
+                android:textSize="@dimen/_15ssp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            style="@style/viewLineStyle"
+            android:background="#D471AD" />
+
+        <TextView
+            android:id="@+id/txtForgotPass"
+
+            style="@style/textViewStyleReguler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="end"
+            android:text="@string/forgot_password"
+            android:textColor="#5F5F5F"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_13ssp" />
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/buttonStyle"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/drawable_login_button"
+            android:text="@string/login"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_17ssp" />
+
+        <TextView
+            style="@style/textViewStyleReguler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center_horizontal"
+            android:text="@string/or"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_15ssp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/txtLoginFb"
+                style="@style/textViewStyleReguler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/login_with_facebook"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/montserrat_regular"
+                android:background="@drawable/drawable_round"/>
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                app:srcCompat="@drawable/fb_icon"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"/>
+
+        </RelativeLayout>
+
+
+        <!--  <com.facebook.login.widget.LoginButton
+              android:id="@+id/login_button"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginBottom="30dp"
+              android:layout_marginTop="30dp" />
+  -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtSignUp"
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/_12sdp"
+                android:text="@string/sign_up_here"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/colorTxtSignUp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/textViewStyleReguler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/copyright_ca7s_2018_todos_os_direitos_reservados"
+            android:textColor="@color/colorTxtSignUp"
+            android:textSize="@dimen/_10ssp" />
+    </LinearLayout>
+</ScrollView>

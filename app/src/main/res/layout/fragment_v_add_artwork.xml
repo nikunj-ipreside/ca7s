@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/_30sdp"
+    android:paddingStart="@dimen/_30sdp"
+    android:paddingTop="@dimen/_20sdp"
+    tools:myServiceContext=".activity.HomeActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rlAddArtWork"
+        android:layout_width="@dimen/_210sdp"
+        android:layout_height="@dimen/_210sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/drawable_rectangle_add_artwork">
+
+        <ImageView
+            android:id="@+id/imgAddArtWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_plus" />
+
+        <ImageView
+            android:id="@+id/imgPicArtWork"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="1dp"
+            android:scaleType="fitXY"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_topbar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/editTextStyle"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtOldPassword"
+            style="@style/editTextStyle"
+            android:hint="@string/old_password"
+            android:inputType="textPassword"
+            android:paddingTop="@dimen/_10sdp"
+            android:textColor="#5F5F5F"
+            android:textSize="@dimen/_15ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        style="@style/viewLineStyle"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#D471AD" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/editTextStyle"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtNewPassword"
+            style="@style/editTextStyle"
+            android:hint="@string/new_password"
+            android:inputType="textPassword"
+            android:paddingTop="@dimen/_10sdp"
+            android:textColor="#5F5F5F"
+            android:textSize="@dimen/_15ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        style="@style/viewLineStyle"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#D471AD" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/editTextStyle"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCoonfirmPassword"
+            style="@style/editTextStyle"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:paddingTop="@dimen/_10sdp"
+            android:textColor="#5F5F5F"
+            android:textSize="@dimen/_15ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        style="@style/viewLineStyle"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#D471AD" />
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/buttonStyle"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:background="@drawable/drawable_login_button"
+        android:text="@string/submit"
+        android:textSize="@dimen/_17ssp" />
+</LinearLayout>

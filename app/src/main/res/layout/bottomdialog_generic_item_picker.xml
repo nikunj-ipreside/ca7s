@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+
+    app:behavior_peekHeight="@dimen/_90sdp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:layout_goneMarginEnd="@dimen/_20sdp">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        style="@style/textViewStyleReguler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="1"
+        android:padding="@dimen/_10sdp"
+        android:text="Header"
+        android:textStyle="bold" />
+
+    <!-- <ImageView
+         android:src="@drawable/background_login"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />-->
+    <View style="@style/viewLineStyle" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleItemList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:visibility="visible" />
+
+
+</LinearLayout>

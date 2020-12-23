@@ -1,0 +1,328 @@
+<resources>
+   <!-- <string name="app_name">CA7S</string>
+    <string name="facebook_app_id">1672289676193381</string>
+    <string name="fb_login_protocol_scheme">fb1672289676193381</string>
+-->
+    <!--    ////////////////////////////////////      -->
+
+    <string name="to_upload_profile_pic_you_have_to_allow_storage_permission">Para fazer o carregamento da foto do perfil, você deve permitir a “Permissão de armazenamento”</string>
+    <string name="alert">Alerta</string>
+    <string name="loading">Carregando…</string>
+
+    <string name="validate_empty_fullname">Por favor digite o nome completo</string>
+    <string name="validate_empty_song">Por favor, selecione a música</string>
+    <string name="validate_empty_song_type">Por favor, selecione o estilo musical</string>
+    <string name="validate_empty_birthdate">Por favor selecione data de nascimento</string>
+    <string name="validate_empty_lyrics">Por favor, escreva a letra</string>
+
+    <string name="cancle_facebook_login">Você cancelou o login do Facebook</string>
+    <string name="to_download_song_you_have_to_allow_storage_permission">Para baixar músicas, você deve permitir permissão de armazenamento</string>
+    <string name="you_have_to_allow_storage_permission">Você tem que permitir “Permissão de armazenamento”</string>
+
+
+    <string name="information_save">Informação guardada</string>
+    <string name="search_result">Resultado da Pesquisa</string>
+    <string name="copyright_ca7s_2018_todos_os_direitos_reservados">Copyright Ca7s 2019.</string>
+
+    <string name="api_error_message">Aconteceu algum erro, por favor, tente novamente mais tarde!</string>
+    <string name="network_error_message">Por favor, verifique sua conectividade com a internet</string>
+    <!--    ////////////////////////////////////      -->
+    <string name="email">E-mail</string>
+    <string name="password">Senha</string>
+    <string name="forgot_password"><u>Esqueceu a senha?</u></string>
+    <string name="forgot_password_topbar">Esqueceu a senha</string>
+    <string name="login">Entrar</string>
+    <string name="or">OU</string>
+    <string name="login_with_facebook">Continuar com Facebook</string>
+    <string name="sign_up_here">Ainda não tens conta no CA7S? <u>Crie uma aqui</u></string>
+    <string name="confirm_password">Confirmar a senha</string>
+    <string name="sign_up">Cadastrar</string>
+    <string name="sign_in_here"><u>Inicie a sessáo</u></string>
+    <string name="i_agree_to_the_ca7s_terms_of_services_and_privacy_policy">Eu concordo com os <u> Termos de Serviço </u> e <u> Política de Privacidade </u> do CA7S</string>
+    <string name="already_registered">Já Cadastrado?</string>
+    <string name="submit">Submeter</string>
+    <string name="top_ca7s">Top Ca7s</string>
+    <string name="i">I</string>
+    <!--Nav Item-->
+    <string name="home">Explorar</string>
+    <string name="notification">Notificações</string>
+    <string name="settings">Definições</string>
+    <string name="about">Sobre Nós</string>
+    <string name="help">Ajuda</string>
+    <string name="t_C">Termos da política de privacidade</string>
+    <string name="rate_us">Classifique o CA7S</string>
+    <string name="share">Compartilhe o aplicativo</string>
+    <string name="logout">Sair</string>
+    <string name="favourites">Favoritas</string>
+    <string name="my_music">Minha música</string>
+    <string name="genre">Estilo Musical</string>
+
+
+    <string name="user_name">Nome de usuário</string>
+
+
+    <string name="tap_add_music">Toque aqui, para adicionar música</string>
+    <string name="upload_music_file">Toque aqui para adicionar música</string>
+    <string name="you_can_add_artwork">Podes adicionar capa e letra à sua música, a partir desse menu.</string>
+
+
+
+
+    <string name="number">Número</string>
+
+    <string name="dd_mm_yyyy">DD\u0020\u0020-  MM\u0020\u0020- YYYY</string>
+    <string name="edit_profile">Editar Perfil</string>
+    <string name="followers">Meus Fãs</string>
+    <string name="following">Sou Fã</string>
+    <string name="favourite">Favoritas</string>
+
+
+
+    <string name="validate_empty_number">Por favor digite o número de telefone</string>
+    <string name="search_name">Pesquisar</string>
+    <string name="no_data_found">Sem conteúdo</string>
+    <string name="no_more_data">Não há mais dados</string>
+
+    <!--  Edit Profile -->
+
+    <string name="change_photo"><u>Trocar Foto</u></string>
+    <string name="gender_">Sexo:</string>
+    <string name="female">Feminino</string>
+    <string name="male">Masculino</string>
+    <string name="date_of_birth">Data de Nascimento</string>
+    <string name="your_name">Nome</string>
+    <string name="city">Cidade</string>
+
+
+    <!--  Notifications -->
+
+    <!--  settings -->
+    <string name="select_language">Selecionar Idioma</string>
+    <string name="private_account">Conta Privada</string>
+    <string name="clear_search_history">Limpar Histórico de Pesquisa</string>
+    <string name="change_password">Alterar Senha</string>
+    <string name="english">Inglês</string>
+    <string name="Portuguese">Português</string>
+
+    <!--  Now Playing    -->
+
+
+    <!--  Album   -->
+    <string name="songs">Músicas</string>
+    <string name="playlist">Lista</string>
+    <string name="like">Votar</string>
+    <string name="add_to_playlist">Adicionar à Playlist</string>
+    <string name="add_to_playlist_song">Ca7 adicionada à Lista de Músicas</string>
+    <string name="remove_to_playlist">Ca7 removida da lista de músicas</string>
+    <string name="add_to_favorites">Adicionar aos Favoritos</string>
+    <string name="download_song">Baixar Música</string>
+    <string name="share_song">Partilhar</string>
+
+    <!--  Search   -->
+    <string name="tap_to_scan">Toque na imagem para identificar músicas</string>
+    <string name="search">Pesquisar</string>
+
+    <!--  Upload Song   -->
+    <string name="uploaded_music">Minhas Músicas</string>
+    <string name="add_music">Adicionar Música</string>
+    <string name="add_artwork">Adicionar Capa</string>
+    <string name="add_lyrics">Adicionar Letra</string>
+    <string name="song_title">Título da Música</string>
+    <string name="album_name">Nome do Álbum</string>
+    <string name="artist_name">Nome do Artista</string>
+    <string name="only_me">So para mim</string>
+    <string name="spublic">Pública</string>
+    <string name="sprivate">Privada</string>
+    <string name="paste_lyrics_here">Cole a letra aqui</string>
+    <string name="save">Salvar</string>
+
+    <!--  Notification Pending    -->
+    <string name="request_list">Pedidos em Espera</string>
+    <string name="accept">Aceitar</string>
+    <string name="declain">Recusar</string>
+
+    <!--  Add Music    -->
+    <string name="search_music">Pesquisar Música</string>
+
+
+    <!--  Responsive    -->
+    <string name="are_you_sure_yuo_want_to_delete_search_history">Tem a certeza que deseja apagar o Histórico de Pesquisa?</string>
+
+    <string name="would_you_like_to_delete_this_notification">Gostarias de apagar essa notificação?</string>
+    <string name="are_you_sure_you_want_to_remove">Tem a certeza que deseja remover?</string>
+    <string name="are_you_sure_you_want_to_logout">Tem a certeza que desja sair?</string>
+    <string name="unfollow_friend">Tem a certeza que quer deixar de ser fã?</string>
+
+
+    <string name="delete">Apagar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="remove">Remover</string>
+    <string name="pending">Em espera</string>
+    <string name="unfollow">Deixar de ser Fã</string>
+    <string name="ok">Está bem</string>
+    <string name="top">Top</string>
+    <string name="play">Play</string>
+    <string name="profile">Perfil</string>
+    <string name="history">Histórico</string>
+    <string name="downloading_complite">Download Completo</string>
+    <string name="follow">Seguir</string>
+    <string name="yes_">Sim</string>
+    <string name="no_">Não</string>
+    <string name="self">auto</string>
+    <string name="request">Pedido</string>
+
+    <string name="data_not_found">Vazio</string>
+    <string name="lyrics_not_availabe">Ca7 sem letra.</string>
+
+    <string name="this_song_is_downloading">Baixando a música</string>
+    <string name="this_song_is_already_downloaded">Música já baixada</string>
+
+    <!-- ////////////////// Validation \\\\\\\\\\\\\\\\\\\\\\\\\\\   -->
+
+    <string name="validate_empty_email">Por favor insira e-mail</string>
+    <string name="validate_valid_email">Por favor insira e-mail válido</string>
+
+    <string name="validate_privacy_terms">Por favor aceitar os Termos e Condições</string>
+    <string name="validate_city">Por favor escolha a cidade</string>
+
+    <string name="validate_your_name">Por favor introduza seu nome de usuário</string>
+    <string name="validate_user_name">Please enter topUser name</string>
+
+    <string name="please_enter_your_current_password">Por favor digite sua senha atual</string>
+    <string name="old_password">Senha antiga</string>
+    <string name="new_password">Nova senha</string>
+    <string name="validate_match_pass">As senhas não coincidem</string>
+    <string name="validate_empty_password">Por favor insira a senha</string>
+    <string name="validate_empty_confirm_pass">Por favor confirme a senha</string>
+    <string name="validate_valid_confirm_pass">Confirme A Senha deve conter no minímo 6 caractéres e máximo 12, e deve ter pelo menos uma Letra maiúscula, uma minúscula, um número e um caractér especial.</string>
+    <string name="validate_password">A palavra-passe deve conter no pelo menos: Uma letra minúscula, Uma letra maiúscula, Um número, Mínimo 6 dígitos.</string>
+
+    <string name="validate_empty_song_title">Por favor insira o título da música</string>
+    <string name="validate_empty_album_name">or favor insira o nome do álbum</string>
+    <string name="validate_empty_artist_name">Por favor insira o nome do artista</string>
+
+
+    <!-- //////////////////                Permission                  \\\\\\\\\\\\\\\\\\\\\\\\\\\   -->
+
+    <!-- CA7S uses media library to select media and upload to ypur account.	CA7S utiliza a sua pasta de música para carregá-las na sua conta
+   CA7S want to use Camera	CA7S pretende aceder à sua câmera
+   CA7S uses microphone	CA7S pretende aceder o microfone
+   CA7S want to use Photo Library	CA7S pretende aceder à sua pasta de fotos-->
+    <string name="discover">Explorar</string>
+    <string name="recognize">Identificar</string>
+ <string name="downloads">Baixadas</string>
+    <string name="listening">A ouvir</string>
+    <string name="trending">Mais procuradas</string>
+    <string name="browse_all">Ver todos</string>
+    <string name="new_releases">Novidades</string>
+ <string name="rising_stars">Novos Talentos</string>
+    <string name="new_keyword">Nova</string>
+    <string name="find_in_ca7">Procurar no CA7S</string>
+    <string name="collections">Estilos</string>
+    <string name="add_new_playlist">Criar Playlist</string>
+    <string name="up_next">Próximas</string>
+    <string name="lyrics">Letra</string>
+    <string name="song_name_and_artist">Título da música ou nome do artista</string>
+    <string name="try_again">Tentar novamente</string>
+    <string name="no_results">Sem resultados</string>
+    <string name="more">Mais...</string>
+ <string name="star">Votar</string>
+    <string name="unliked">Gosto removido</string>
+ <string name="added_to_favourite">Adicionado aos favoritos.</string>
+ <string name="removed_to_favourite">Removido dos favoritos</string>
+ <string name="liked">Gostei</string>
+    <string name="less">Menos...</string>
+    <string name="field_should_not_empty">O campo não deve estar vazio.</string>
+    <string name="rate">TAXA</string>
+ <string name="please_rate_us_description">Avalie o aplicativo no playstore</string>
+    <string name="enter_playlist_name">Digite o nome da lista de reprodução.</string>
+    <string name="playlist_name">Nome da lista de reprodução</string>
+    <string name="add">Adicionar</string>
+    <string name="update">Atualizar</string>
+    <string name="edit">Editar</string>
+    <string name="added_to_playist">Adicionado à lista de reprodução.</string>
+    <string name="recent_searches">Pesquisa recente</string>
+    <string name="click_on_artwork">Toque na capa da música/álbum para ver a letra.</string>
+    <string name="tap_to_download">Toque aqui para baixar. A música será salva em "Baixadas".</string>
+    <string name="sorry_no_internet">Desculpe! você não está conectado à internet.</string>
+    <string name="attention">Atenção</string>
+    <string name="data_saver_message">Percebemos que você está usando Ca7s no modo 3G / 4G. Deseja ativar o Modo Econômico do Ca7s?</string>
+    <string name="dont_show_again">Não me mostre esta mensagem novamente.</string>
+    <string name="you_cant_perform_this_action">Desculpe! você não pode executar esta ação na música baixada.</string>
+    <string name="economic_mode">Modo Económico</string>
+    <string name="do_you_want_to_enable">Deseja ativar o Modo Econômico do Ca7s?</string>
+    <string name="create_playlist">Criar</string>
+    <string name="already_in_playlist">Música já existente nesta lista de reprodução.</string>
+ <string name="playlist_created">Lista de reprodução criada com sucesso</string>
+<string name="playlist_updated_successfully">Lista de reprodução atualizada com sucesso</string>
+    <string name="song_added_to_playlist">Música adicionada à lista de reprodução</string>
+    <string name="song_removed_from_playlist">Música removida da lista de reprodução.</string>
+    <string name="playlist_deleted">Lista de reprodução eliminada</string>
+    <string name="playlist_favouritr">Listas</string>
+    <string name="create_playlist_favourite">Criar Lista de Reprodução</string>
+    <string name="playlist_not_found">Não foram encontradas Playlists.</string>
+    <string name="playlist_not_created">Lista de reprodução não criada.</string>
+    <string name="song_uploaded_successfully">Música carregada com sucesso.</string>
+    <string name="email_not_found_in_facebook">Seu endereço de email não está aberto ao público na configuração da conta do Facebook. Para se registrar e continuar usando o aplicativo, altere as configurações de segurança em sua conta do Facebook.</string>
+    <string name="facebook_security_alert">Alerta por email</string>
+    <string name="select_city">Selecionar província</string>
+    <string name="created_by_top">Músicas Mais Votadas</string>
+    <string name="created_by_new">Todas CA7S Recentes</string>
+    <string name="created_by_rising">Nossas Próximas Estrelas</string>
+    <string name="sorry_song_not_found">Desculpa, música não encontrada.</string>
+    <string name="youravailableuploadlimitis">Limite de upload disponível:</string>
+    <string name="downloading_started">Download iniciado ...</string>
+    <string name="nothing_to_change">Nada para mudar de perfil.</string>
+    <string name="profile_updated_succesfully">Perfil atualizado com sucesso.</string>
+    <string name="profile_image_updated">Imagem do perfil atualizada com sucesso.</string>
+    <string name="profile_image_not_updated">Imagem do perfil não atualizada.</string>
+    <string name="song_year">Ano de lançamento</string>
+    <string name="song_year_is_required">Digite o ano de lançamento da música</string>
+    <string name="release_year_should_not_be_greater">O ano de lançamento não deve ser maior que o ano atual.</string>
+    <string name="enter_valid_release_year">Digite um ano de lançamento válido.</string>
+    <string-array name="nav_item">
+  <item>@string/notification</item>
+  <item>@string/home</item>
+  <item>@string/settings</item>
+  <item>@string/about</item>
+  <item>@string/help</item>
+  <item>@string/t_C</item>
+  <item>@string/share</item>
+  <item>@string/rate_us</item>
+  <item>@string/logout</item>
+ </string-array>
+
+
+ <string-array name="nav_item2">
+  <item>@string/notification</item>
+  <item>@string/home</item>
+  <item>@string/settings</item>
+  <item>@string/about</item>
+  <item>@string/help</item>
+  <item>@string/t_C</item>
+  <item>@string/share</item>
+  <item>@string/rate_us</item>
+  <item>@string/login</item>
+ </string-array>
+
+ <string-array name="lang">
+  <item>@string/english</item>
+  <item>@string/Portuguese</item>
+
+ </string-array>
+
+
+ <integer-array name="nav_image">
+  <item>@drawable/ic_notifications_gray</item>
+  <item>@drawable/explore_gray</item>
+  <item>@drawable/settings</item>
+  <item>@drawable/information</item>
+  <item>@drawable/help</item>
+  <item>@drawable/yes</item>
+  <item>@drawable/ic_share</item>
+  <item>@drawable/star_filled_gray</item>
+  <item>@drawable/export_gray</item>
+ </integer-array>
+
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="@dimen/_65sdp"
+    app:layout_behavior="com.music.ca7s.utils.LockableBottomSheetBehavior">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:background="@android:color/transparent"
+    >
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/bottom_sheet_background"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/up_next"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_bold"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/nav_up"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/colorWhite"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_songs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:background="@android:color/transparent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           />
+
+<!--        app:behind_swiped_item_bg_color="@color/swipeBehindBackground"-->
+<!--        app:behind_swiped_item_bg_color_secondary="@color/swipeBehindBackgroundSecondary"-->
+<!--        app:behind_swiped_item_icon="@drawable/ic_remove_item"-->
+<!--        app:behind_swiped_item_icon_secondary="@drawable/ic_archive_item"-->
+<!--        app:behind_swiped_item_icon_margin="@dimen/spacing_normal"-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rv_songs"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>-->
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_up"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_circle_svg"
+        android:padding="@dimen/_7sdp"
+        app:srcCompat="@drawable/ic_up_theme"/>
+</RelativeLayout>
+</LinearLayout>

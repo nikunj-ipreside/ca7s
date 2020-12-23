@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/_15sdp"
+    android:paddingStart="@dimen/_15sdp"
+    android:paddingTop="@dimen/_20sdp"
+ >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_100sdp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imgAddSong"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_125sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/_18sdp"
+                    app:srcCompat="@drawable/ic_dotted_circle" />
+
+                <ImageView
+                    android:id="@+id/imgPlush"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/_18sdp"
+                    app:srcCompat="@drawable/ic_plus" />
+
+                <com.github.lzyzsd.circleprogress.DonutProgress
+                    android:id="@+id/donut_progress"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="@color/colorTopbar"
+                    android:backgroundTintMode="add"
+                    custom:donut_finished_color="@color/colorTopbar"
+                    custom:donut_finished_stroke_width="15dp"
+                    custom:donut_show_text="true"
+                    app:donut_circle_starting_degree="270"
+
+                    custom:donut_text_color="@color/colorTopbar"
+                    custom:donut_text_size="@dimen/_18ssp"
+
+                    custom:donut_unfinished_color="@android:color/transparent"
+                    custom:donut_unfinished_stroke_width="15dp" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edtSongTitle"
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:hint="@string/song_title"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+            <LinearLayout style="@style/viewLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/_15sdp">
+
+                    <EditText
+                        android:id="@+id/edtAlbumName"
+                        style="@style/editTextStyle"
+                        android:hint="@string/album_name"
+                        android:inputType="text"
+                        android:padding="@dimen/_10sdp" />
+
+                    <LinearLayout style="@style/viewLineStyle" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/_15sdp">
+
+                    <EditText
+                        android:id="@+id/edtArtistName"
+                        style="@style/editTextStyle"
+                        android:hint="@string/artist_name"
+                        android:inputType="text"
+                        android:padding="@dimen/_10sdp" />
+
+                    <LinearLayout style="@style/viewLineStyle" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toStartOf="@+id/imgDropdown"
+                android:editable="false"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:focusable="false"
+                android:text="@string/song_year"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/montserrat_regular"
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"
+                android:hint="@string/genre"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:maxLength="20" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/_15sdp">
+
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+                <EditText
+                    android:id="@+id/edtSongYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/song_year"
+                    android:inputType="phone"
+                    android:maxLength="4"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:background="@null"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorLineMenu"
+                    android:focusableInTouchMode="false"
+                    android:cursorVisible="false"
+                    android:digits="1234567890"
+                    android:padding="@dimen/_10sdp" />
+<!--                android:background="@android:color/transparent"-->
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rlSongType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/_15sdp">
+
+                    <EditText
+                        android:id="@+id/edtSongType"
+                        style="@style/editTextStyle"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_toStartOf="@+id/imgDropdown"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:cursorVisible="false"
+                        android:hint="@string/genre"
+                        android:maxLength="20"
+                        android:padding="@dimen/_10sdp" />
+
+
+                    <ImageView
+                        android:id="@+id/imgDropdown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:srcCompat="@drawable/ic_dropdown" />
+
+                    <LinearLayout
+                        style="@style/viewLineStyle"
+                        android:layout_below="@+id/edtSongType" />
+
+
+                </RelativeLayout>
+
+                <!-- <RelativeLayout
+                     android:id="@+id/rlYear"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:orientation="vertical"
+                     android:paddingStart="@dimen/_15sdp">
+
+                     <TextView
+                         android:id="@+id/txtYear"
+                         style="@style/textViewStyleReguler"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:maxLength="10"
+                         android:padding="@dimen/_10sdp"
+                         android:text="@string/year" />
+
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentEnd="true"
+                         android:layout_centerVertical="true"
+                         android:layout_marginEnd="@dimen/_10sdp"
+                         android:src="@drawable/ic_dropdown" />
+
+                     <LinearLayout
+                         style="@style/viewLineStyle"
+                         android:layout_below="@+id/txtYear" />
+                 </RelativeLayout>-->
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rgPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rbPublic"
+                    style="@style/textViewStyleReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorVPagerHeader"
+                    android:checked="true"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/spublic"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorVPagerHeader" />
+
+                <RadioButton
+                    android:id="@+id/rbPrivate"
+                    style="@style/textViewStyleReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorVPagerHeader"
+                    android:checked="false"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/sprivate"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorVPagerHeader" />
+
+
+                <RadioButton
+                    android:id="@+id/rbOnlyMe"
+                    style="@style/textViewStyleReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorVPagerHeader"
+                    android:checked="false"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/only_me"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorVPagerHeader" />
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@style/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/drawable_login_button"
+                android:paddingEnd="@dimen/_40sdp"
+                android:paddingStart="@dimen/_40sdp"
+                android:text="@string/save"
+                android:textAllCaps="true"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

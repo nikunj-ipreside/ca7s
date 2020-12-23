@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgShowHp"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    app:srcCompat="@drawable/ic_scan_hp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgShowProfile"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:src="@drawable/ic_top_placeholder"
+                    app:civ_border_color="@color/colorBlack"
+                    app:civ_border_width="2dp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txtShowProName"
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_horizontal"
+                android:text="Your Name"
+                android:textColor="@color/colorTxtSignUp" />
+
+            <!--<TextView
+                android:id="@+id/txtMenuUserName"
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:text="TopUser Name"
+                android:textColor="@color/colorTxtMenu"
+                android:textSize="@dimen/_14ssp" />-->
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textViewStyleReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/i"
+                    android:textColor="@color/colorTxtMenu"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:srcCompat="@drawable/ic_menu_heart" />
+
+                <TextView
+                    android:id="@+id/txtShowProCity"
+                    style="@style/textViewStyleReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/city"
+                    android:textColor="@color/colorTxtMenu"
+                    android:textSize="@dimen/_14ssp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtShowEmail"
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:lines="1"
+                android:text="yourEmail@gmail.com"
+                android:textColor="@color/colorTxtMenu"
+                android:textSize="@dimen/_14ssp" />
+
+            <LinearLayout
+                style="@style/viewLineStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorTxtMenu" />
+
+
+            <TextView
+                android:id="@+id/txtShowProNumber"
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:lines="1"
+                android:text="@string/number"
+                android:textColor="@color/colorTxtMenu"
+                android:textSize="@dimen/_14ssp" />
+
+            <LinearLayout
+                style="@style/viewLineStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorTxtMenu" />
+
+
+            <TextView
+                android:id="@+id/txtShowCity"
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:lines="1"
+                android:text="@string/city"
+                android:textColor="@color/colorTxtMenu"
+                android:textSize="@dimen/_14ssp" />
+
+            <LinearLayout
+                style="@style/viewLineStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorTxtMenu" />
+
+            <TextView
+                android:id="@+id/txtShowProGender"
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:lines="1"
+                android:text="Gender: Male"
+                android:textColor="@color/colorTxtMenu"
+                android:textSize="@dimen/_14ssp" />
+
+            <LinearLayout
+                style="@style/viewLineStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorTxtMenu" />
+
+            <TextView
+                android:id="@+id/txtShowProBirthdate"
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:lines="1"
+                android:text="@string/date_of_birth"
+                android:textColor="@color/colorTxtMenu"
+                android:textSize="@dimen/_14ssp" />
+
+            <LinearLayout
+                style="@style/viewLineStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorTxtMenu" />
+
+            <LinearLayout
+                android:id="@+id/llFollowBtns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnfollow"
+                    style="@style/buttonStyle"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_border_follow"
+                    android:text="@string/follow"
+                    android:textColor="@color/colorTxtSignUp"
+                    android:textSize="@dimen/_14ssp" />
+
+                <Button
+                    android:id="@+id/btnUnfollow"
+                    style="@style/buttonStyle"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_login_button"
+                    android:text="@string/unfollow"
+
+                    android:textSize="@dimen/_14ssp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeRoot"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:background="@color/colorBottomBar"
+    android:fitsSystemWindows="true"
+    android:gravity="center">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:drawablePadding="@dimen/_3sdp"
+            android:drawableTop="@drawable/selector_radio_home"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/discover"
+            android:textColor="@drawable/selector_bottombar_text_color"
+            android:textSize="@dimen/_10ssp" />
+
+        <RadioButton
+            android:visibility="visible"
+            android:id="@+id/rbBroadCast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:drawablePadding="@dimen/_3sdp"
+            android:drawableTop="@drawable/selector_radio_broadcast"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/recognize"
+            android:textColor="@drawable/selector_bottombar_text_color"
+            android:textSize="@dimen/_10ssp" />
+
+        <RadioButton
+            android:id="@+id/rbMyMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:drawablePadding="@dimen/_3sdp"
+            android:drawableTop="@drawable/selector_radio_mymusic"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/downloads"
+            android:textColor="@drawable/selector_bottombar_text_color"
+            android:textSize="@dimen/_10ssp" />
+
+        <RadioButton
+            android:id="@+id/rbSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:drawablePadding="@dimen/_3sdp"
+            android:drawableTop="@drawable/selector_radio_search"
+            android:gravity="center"
+            android:visibility="gone"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/search"
+            android:textColor="@drawable/selector_bottombar_text_color"
+            android:textSize="@dimen/_10ssp" />
+
+        <RadioButton
+            android:id="@+id/rbFavourite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:drawablePadding="@dimen/_3sdp"
+            android:drawableTop="@drawable/selector_radio_favourite"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/favourites"
+            android:textColor="@drawable/selector_bottombar_text_color"
+            android:textSize="@dimen/_10ssp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_download_notification"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/_95sdp"
+        android:layout_marginRight="@dimen/_95sdp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/drawable_round_theme"/>
+
+
+</RelativeLayout>

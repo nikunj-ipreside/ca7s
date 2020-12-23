@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    card_view:cardBackgroundColor="@color/colorWhite"
+    card_view:cardCornerRadius="@dimen/_10sdp"
+    card_view:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        android:background="@color/colorWhite"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:id="@+id/linearEditField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/editTextStyle"
+                app:passwordToggleTint="@color/colorEdtEmail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtYourName"
+                    style="@style/editTextStyle"
+                    android:hint="@string/your_name"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                style="@style/viewLineStyle"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:passwordToggleTint="@color/colorEdtEmail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtUserName"
+                    style="@style/editTextStyle_two"
+                    android:hint="@string/user_name"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                style="@style/viewLineStyle"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+            <TextView
+                style="@style/textViewStyleReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/colorLineMenu" />
+
+            <Spinner
+                android:id="@+id/spinnerCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/editTextStyle"
+                android:visibility="gone"
+                app:passwordToggleTint="@color/colorEdtEmail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtCity"
+                    style="@style/editTextStyle"
+                    android:hint="@string/city"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                style="@style/viewLineStyle"
+                android:layout_marginTop="@dimen/_3sdp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/buttonStyle"
+            android:layout_below="@+id/linearEditField"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/drawable_login_button"
+            android:text="@string/submit" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
